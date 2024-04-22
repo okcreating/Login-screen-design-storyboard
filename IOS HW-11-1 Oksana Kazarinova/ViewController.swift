@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var dontHaveAcountAndSignUp: UIStackView!
+    @IBOutlet weak var socialMediaButtons: UIStackView!
+    @IBOutlet weak var linesAndConnectWith: UIStackView!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var messengerChosingLabel: UILabel!
     @IBOutlet weak var lineOne: UIView!
@@ -26,14 +29,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         userName.setTextFieldShape()
         password.setTextFieldShape()
-        buttonLogin.setButtonShape()
+        loginButton.setButtonShape()
         facebookButton.setButtonShape()
         twitterButton.setButtonShape()
+        loginButton.setButtonShadow()
+        facebookButton.setButtonShadow()
+        twitterButton.setButtonShadow()
         userName.setLeftIcon(loadSFImage(name: "person") ?? UIImage.remove)
         userName.setRightIcon(loadSFImage(name: "checkmark.circle.fill") ?? UIImage.remove)
         password.setLeftIcon(loadSFImage(name: "lock") ?? UIImage.remove)
         setupHierarchy()
-        setupLayouts()
     }
 
 
@@ -44,25 +49,24 @@ class ViewController: UIViewController {
         view.addSubview(loginLabel)
         view.addSubview(userName)
         view.addSubview(password)
-        view.addSubview(buttonLogin)
+        view.addSubview(loginButton)
         view.addSubview(forgotPasswordButton)
-        view.addSubview(lineOne)
-        view.addSubview(lineTwo)
-        view.addSubview(messengerChosingLabel)
-        view.addSubview(facebookButton)
-        view.addSubview(twitterButton)
-        view.addSubview(dontHaveAccountLabel)
-        view.addSubview(signUpButton)
+//        view.addSubview(lineOne)
+//        view.addSubview(lineTwo)
+//        view.addSubview(messengerChosingLabel)
+        view.addSubview(linesAndConnectWith)
+//        view.addSubview(facebookButton)
+//        view.addSubview(twitterButton)
+        view.addSubview(socialMediaButtons)
+//        view.addSubview(dontHaveAccountLabel)
+//        view.addSubview(signUpButton)
+        view.addSubview(dontHaveAcountAndSignUp)
     }
 
-    private func setupLayouts() {
-
-    }
-
-// MARK: - Additional methods
+// MARK: - Additional method
 
     private func loadSFImage(name: String) -> UIImage? {
-        let image = UIImage(systemName: name, withConfiguration: UIImage.SymbolConfiguration(pointSize: 45, weight: .medium, scale: .medium))?.withTintColor(.clear, renderingMode: .automatic)
+        let image = UIImage(systemName: name, withConfiguration: UIImage.SymbolConfiguration(pointSize: 35, weight: .medium, scale: .medium))?.withTintColor(.clear, renderingMode: .automatic)
         return image
     }
 }
@@ -93,7 +97,6 @@ extension UITextField {
     }
 }
 
-
 extension UIButton {
     func setButtonShape() {
         self.layer.cornerRadius = 17
@@ -105,5 +108,17 @@ extension UITextField {
     func setTextFieldShape() {
         self.layer.cornerRadius = 17
         self.layer.masksToBounds = true
+    }
+}
+
+extension UIButton {
+    func setButtonShadow() {
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.3
+        self.layer.shadowOffset = .zero
+        self.layer.shadowRadius = 10
+        self.layer.shouldRasterize = true
+        self.layer.masksToBounds = false
+        self.layer.rasterizationScale = UIScreen.main.scale
     }
 }
