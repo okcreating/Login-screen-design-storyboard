@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C67512E72CD00D2A00919F57 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C67E833E2BBB330F00EB77E7 /* AppDelegate.swift */,
+				C67E83402BBB330F00EB77E7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C67512E82CD00D4000919F57 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67E83422BBB330F00EB77E7 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C67512E92CD00D5B00919F57 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C67E83442BBB330F00EB77E7 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C67512EA2CD00D7F00919F57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C67E83472BBB331000EB77E7 /* Assets.xcassets */,
+				C67E83492BBB331000EB77E7 /* LaunchScreen.storyboard */,
+				C67E834C2BBB331000EB77E7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C67E83322BBB330F00EB77E7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,10 @@
 		C67E833D2BBB330F00EB77E7 /* IOS HW-11-1 Oksana Kazarinova */ = {
 			isa = PBXGroup;
 			children = (
-				C67E833E2BBB330F00EB77E7 /* AppDelegate.swift */,
-				C67E83402BBB330F00EB77E7 /* SceneDelegate.swift */,
-				C67E83422BBB330F00EB77E7 /* ViewController.swift */,
-				C67E83442BBB330F00EB77E7 /* Main.storyboard */,
-				C67E83472BBB331000EB77E7 /* Assets.xcassets */,
-				C67E83492BBB331000EB77E7 /* LaunchScreen.storyboard */,
-				C67E834C2BBB331000EB77E7 /* Info.plist */,
+				C67512E72CD00D2A00919F57 /* App */,
+				C67512E82CD00D4000919F57 /* ViewControllers */,
+				C67512E92CD00D5B00919F57 /* Storyboards */,
+				C67512EA2CD00D7F00919F57 /* Resources */,
 			);
 			path = "IOS HW-11-1 Oksana Kazarinova";
 			sourceTree = "<group>";
@@ -288,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Info.plist";
+				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Info.plist";
+				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
