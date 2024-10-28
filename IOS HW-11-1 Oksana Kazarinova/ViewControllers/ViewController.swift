@@ -83,9 +83,7 @@ extension UITextField {
         leftView = iconContainerView
         leftViewMode = .always
     }
-}
 
-extension UITextField {
     func setRightIcon(_ image: UIImage) {
         let iconView = UIImageView(frame: CGRect(x: 2, y: 5, width: 20, height: 20))
         iconView.image = image
@@ -95,16 +93,7 @@ extension UITextField {
         rightView = iconContainerView
         rightViewMode = .always
     }
-}
 
-extension UIButton {
-    func setButtonShape() {
-        self.layer.cornerRadius = 17
-        self.layer.masksToBounds = true
-    }
-}
-
-extension UITextField {
     func setTextFieldShape() {
         self.layer.cornerRadius = 17
         self.layer.masksToBounds = true
@@ -112,6 +101,11 @@ extension UITextField {
 }
 
 extension UIButton {
+    func setButtonShape() {
+        self.layer.cornerRadius = 17
+        self.layer.masksToBounds = true
+    }
+
     func setButtonShadow() {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.3
