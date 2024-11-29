@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C67512E72CD00D2A00919F57 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C67E833E2BBB330F00EB77E7 /* AppDelegate.swift */,
+				C67E83402BBB330F00EB77E7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C67512E82CD00D4000919F57 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67E83422BBB330F00EB77E7 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C67512E92CD00D5B00919F57 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C67E83442BBB330F00EB77E7 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C67512EA2CD00D7F00919F57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C67E83472BBB331000EB77E7 /* Assets.xcassets */,
+				C67E83492BBB331000EB77E7 /* LaunchScreen.storyboard */,
+				C67E834C2BBB331000EB77E7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C67E83322BBB330F00EB77E7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,10 @@
 		C67E833D2BBB330F00EB77E7 /* IOS HW-11-1 Oksana Kazarinova */ = {
 			isa = PBXGroup;
 			children = (
-				C67E833E2BBB330F00EB77E7 /* AppDelegate.swift */,
-				C67E83402BBB330F00EB77E7 /* SceneDelegate.swift */,
-				C67E83422BBB330F00EB77E7 /* ViewController.swift */,
-				C67E83442BBB330F00EB77E7 /* Main.storyboard */,
-				C67E83472BBB331000EB77E7 /* Assets.xcassets */,
-				C67E83492BBB331000EB77E7 /* LaunchScreen.storyboard */,
-				C67E834C2BBB331000EB77E7 /* Info.plist */,
+				C67512E72CD00D2A00919F57 /* App */,
+				C67512E82CD00D4000919F57 /* ViewControllers */,
+				C67512E92CD00D5B00919F57 /* Storyboards */,
+				C67512EA2CD00D7F00919F57 /* Resources */,
 			);
 			path = "IOS HW-11-1 Oksana Kazarinova";
 			sourceTree = "<group>";
@@ -95,7 +127,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					C67E833A2BBB330F00EB77E7 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -202,6 +234,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -262,6 +295,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -288,12 +322,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Info.plist";
+				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,12 +349,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Info.plist";
+				INFOPLIST_FILE = "IOS HW-11-1 Oksana Kazarinova/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
